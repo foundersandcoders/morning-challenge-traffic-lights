@@ -50,9 +50,9 @@ Loop the light so it plays forever.
 
 Loop the second light with the following rules:
 
-+ Green should show only when the other light is green.
-+ When transitioning from green to red show yellow.
-+ If the other light is green or yellow, red should show.
++ Green should show only when the other light is red.
++ When transitioning from green to red, show yellow.
++ If the other light is green or yellow, show red.
 + When transitioning from red to green show yellow and red simultaneously.
 
 :vertical_traffic_light: If successful you should see something like the

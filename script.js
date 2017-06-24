@@ -9,9 +9,6 @@ var red2 = blinkLight(get('red2'), 'red');
 var yellow2 = blinkLight(get('yellow2'), 'yellow');
 var green2 = blinkLight(get('green2'), 'green');
 
-// blinkLight returns a function that switches a light on then waits a second
-// before switching it off again and calling its first argument as a 'callback'.
-// If no arguments are supplied the light just goes off.
 function blinkLight(element, colour) {
   var blink = function(callback) {
     element.classList.add(colour);
@@ -33,15 +30,46 @@ function get(id) {
 // --- AND HERE.
 // Replace the example code below with your own version:
 
-function light() {
-  // HINT: when red() finishes it calls the first argument as a function.
-  // So in this example the flow is red() -> wait a second -> green()
-  red(green);
+function light(callback) {
+  green(function() {
+    green(function() {
+      yellow(function() {
+        red(function() {
+          red(function() {
+            red(function() {
+              red(function() {
+                red();
+                yellow(function() {
+                  callback(callback);
+                });
+              });
+            });
+          });
+        });
+      });
+    });
+  });
 }
-light();
+light(light);
 
-function light2() {
-  // Same as above except the flow is green2() -> wait a second -> red2()
-  green2(red2);
+function light2(callback) {
+  red2(function() {
+    red2(function() {
+      red2(function() {
+        yellow2();
+        red2(function() {
+          green2(function() {
+            green2(function() {
+              yellow2(function() {
+                red2(function() {
+                  callback(callback);
+                });
+              });
+            });
+          });
+        });
+      });
+    });
+  });
 }
-light2();
+light2(light2);

@@ -28,7 +28,7 @@ function get(id) {
 }
 
 // --- AND HERE.
-// Replace the example code below with your own version:
+// Replace the example code below with your own solution:
 
 function light(callback) {
   green(function() {

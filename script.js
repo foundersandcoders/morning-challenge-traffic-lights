@@ -31,7 +31,7 @@ function get(id) {
 }
 
 // --- AND HERE.
-// Replace the example code below with your own version:
+// Replace the example code below with your own solution:
 
 function light() {
   // HINT: when red() finishes it calls the first argument as a function.

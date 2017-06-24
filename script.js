@@ -30,10 +30,15 @@ function get(id) {
 // --- AND HERE.
 // Your code goes here:
 
-function runBoth(func1, func2) {
+function callBoth(func1, func2) {
   return function(callback) {
-    func1();
-    func2(callback);
+    var n = 0;
+    var call = function() {
+      n += 1;
+      if (n > 1) callback();
+    };
+    func1(call);
+    func2(call);
   };
 }
 
@@ -51,7 +56,7 @@ function callAllInOrder(tasks, callback) {
 }
 
 function light(callback) {
-  var redAndYellow = runBoth(red, yellow);
+  var redAndYellow = callBoth(red, yellow);
   var order = [green, green, yellow, red, red, red, red, redAndYellow];
   callAllInOrder(order, function() {
     callback(callback);
@@ -59,7 +64,7 @@ function light(callback) {
 }
 
 function light2(callback) {
-  var redAndYellow = runBoth(red2, yellow2);
+  var redAndYellow = callBoth(red2, yellow2);
   var order2 = [red2, red2, red2, redAndYellow, green2, green2, yellow2, red2];
   callAllInOrder(order2, function() {
     callback(callback);

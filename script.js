@@ -28,7 +28,6 @@ function get(id) {
 }
 
 // --- AND HERE.
-// Your code goes here:
 
 function callBoth(func1, func2) {
   return function(callback) {
@@ -41,7 +40,8 @@ function callBoth(func1, func2) {
     func2(call);
   };
 }
-
+// Calls all the tasks (an array of functions) one after another and then calls
+// the callback
 function callAllInOrder(tasks, callback) {
   var callNext = function() {
     if (n + 1 === tasks.length) {

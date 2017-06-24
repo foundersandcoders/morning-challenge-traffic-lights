@@ -10,7 +10,7 @@ var yellow2 = blinkLight(get('yellow2'), 'yellow');
 var green2 = blinkLight(get('green2'), 'green');
 
 function blinkLight(element, colour) {
-  return function red(callback) {
+  return function(callback) {
     element.classList.add(colour);
     setTimeout(function() {
       element.classList.remove(colour);
@@ -27,3 +27,9 @@ function get(id) {
 
 // --- AND HERE.
 // Your code goes here:
+
+function light() {
+  // hint: when red is finished it calls green
+  red(green);
+}
+light();

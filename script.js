@@ -10,7 +10,7 @@ var yellow2 = blinkLight(get('yellow2'), 'yellow');
 var green2 = blinkLight(get('green2'), 'green');
 
 function blinkLight(element, colour) {
-  return function(callback) {
+  var blink = function(callback) {
     element.classList.add(colour);
     setTimeout(function() {
       element.classList.remove(colour);
@@ -19,6 +19,8 @@ function blinkLight(element, colour) {
       }
     }, time);
   };
+
+  return blink;
 }
 
 function get(id) {
@@ -33,3 +35,8 @@ function light() {
   red(green);
 }
 light();
+
+function light2() {
+  green2(red2);
+}
+light2();

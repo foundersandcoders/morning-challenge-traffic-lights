@@ -28,21 +28,21 @@ If you get stuck check out [hint.md](./hint.md).
 
 Light up the first traffic light in the following order:
 
-+ :red_circle: red
-+ :red_circle::sun_with_face: red & yellow
 + :green_apple: green
 + :sun_with_face: yellow
 + :red_circle: red
++ :red_circle::sun_with_face: red & yellow
++ :green_apple: green
 
 ### Part 2:
 
-Lengthen the green and red lights:
+Display the red light for longer:
 
++ :green_apple: green
++ :sun_with_face: yellow
 + :red_circle: red (3 seconds)
 + :red_circle::sun_with_face: red & yellow
-+ :green_apple: green (2 seconds)
-+ :sun_with_face: yellow
-+ :red_circle: red
++ :green_apple: green
 
 ### Part 3:
 

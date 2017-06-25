@@ -1,3 +1,7 @@
+**Author**: [@finnhodgkin](https://github.com/finnhodgkin)
+
+**Maintainer**: [@finnhodgkin](https://github.com/finnhodgkin)  
+
 # Traffic light callback challenge:vertical_traffic_light:
 
 ![traffic light gif](https://user-images.githubusercontent.com/22300773/27510355-77a53678-5906-11e7-8215-845f9c987e09.gif)

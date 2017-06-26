@@ -11,7 +11,7 @@
 1. Clone the repo
 
 ```
-$ git clone https://github.com/founderrsandcoders/morning-challenge-traffic-lights.git
+$ git clone https://github.com/foundersandcoders/morning-challenge-traffic-lights.git
 ```
 
 2. Open the folder in your favourite text editor.

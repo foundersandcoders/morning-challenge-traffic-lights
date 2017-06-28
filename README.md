@@ -16,6 +16,12 @@ $ git clone https://github.com/foundersandcoders/morning-challenge-traffic-light
 
 2. Open the folder in your favourite text editor.
 
+3. For instant feedback on all your changes run live server :sparkles:
+
+```
+$ npm i && npm run live
+```
+
 ## Your task
 
 Your task is to replicate the traffic lights shown above. The only file you'll

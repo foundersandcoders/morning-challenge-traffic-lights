@@ -1,13 +1,13 @@
 // DON'T CHANGE ANYTHING BETWEEN HERE ---
 var time = 1000;
 
-var red = blinkLight(get('red'), 'red');
-var yellow = blinkLight(get('yellow'), 'yellow');
-var green = blinkLight(get('green'), 'green');
+var red = blinkLight(get('light-top'), 'red');
+var yellow = blinkLight(get('light-middle'), 'yellow');
+var green = blinkLight(get('light-bottom'), 'green');
 
-var red2 = blinkLight(get('red2'), 'red');
-var yellow2 = blinkLight(get('yellow2'), 'yellow');
-var green2 = blinkLight(get('green2'), 'green');
+var red2 = blinkLight(get('light-top2'), 'red');
+var yellow2 = blinkLight(get('light-middle2'), 'yellow');
+var green2 = blinkLight(get('light-bottom2'), 'green');
 
 // blinkLight returns a function that switches a light on then waits a second
 // before switching it off again and calling its first argument as a 'callback'.

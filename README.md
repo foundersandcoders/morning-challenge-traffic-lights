@@ -28,7 +28,7 @@ Your task is to replicate the traffic lights shown above. The only file you'll
 need to edit is `script.js`. Hopefully the instructional comments will speak for
 themselves.
 
-If you get stuck check out [hint.md](./hint.md).
+If you get stuck check out the [hints branch](https://github.com/foundersandcoders/morning-challenge-traffic-lights/tree/hints).
 
 ### Part 1:
 

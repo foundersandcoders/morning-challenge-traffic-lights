@@ -22,6 +22,49 @@ $ git clone https://github.com/foundersandcoders/morning-challenge-traffic-light
 $ npm i && npm run live
 ```
 
+## What is first-class function?
+
+First class function is similar to being a first class citizen - it has the right to freely move across boundaries in the country without being questioned of its purpose. In other words, it is an entity which supports all the operations generally available to other entities
+
+Specifically in Javascript, functions are considered first-class objects because they can have properties and methods just like any other object. In addition to defining and invoking functions, Javascript supports passing functions as arguments to other functions, returning them as the values from other functions, assigning them to variables or storing them in data structures and etc.
+
+Here are some examples of how functions can be used.
+
+#### Functions can be invoked/called:
+```
+function greeting(firstName, lastName) {
+  alert('Hello ' + firstName + '  ' + lastName);
+}
+greeting('Bob', 'Belcher'); // Hello Bob Belcher
+```
+
+#### Functions can be assigned to a variable:
+```
+var greeting = function(firstName, lastName) {
+  alert('Hello ' + firstName + '  ' + lastName);
+}
+greeting('Tina', 'Belcher'); // Hello Tina Belcher
+```
+
+#### Functions can be passed around as data:
+```
+function greeting(p1, p2) {
+  return "Hello " + p1 + " and " + p2
+}
+
+function firstBelcher() {
+  return "Bob Belcher";
+}
+
+function secondBelcher() {
+  return "Tina Belcher";
+}
+
+greeting(firstBelcher(), secondBelcher()); // Hello Bob Belcher and Tina Belcher
+```
+
+
+
 ## Your task
 
 Your task is to replicate the traffic lights shown above. The only file you'll

@@ -24,9 +24,7 @@ $ npm i && npm run live
 
 ## What is first-class function?
 
-First class function is similar to being a first class citizen - it has the right to freely move across boundaries in the country without being questioned of its purpose. In other words, it is an entity which supports all the operations generally available to other entities
-
-Specifically in Javascript, functions are considered first-class objects because they can have properties and methods just like any other object. In addition to defining and invoking functions, Javascript supports passing functions as arguments to other functions, returning them as the values from other functions, assigning them to variables or storing them in data structures and etc.
+_First class function_'s simply mean that functions are treated exactly the same as any other type of data (eg, strings, numbers, arrays ect). This allows them to be assigned to variables, stored in arrays, passed to functions as arguments or returned from functions. In JavaScript this means that functions can be passed around, and are only ever invoked when followed by parens ```()```. 
 
 Here are some examples of how functions can be used.
 

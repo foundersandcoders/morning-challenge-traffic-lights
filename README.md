@@ -22,9 +22,9 @@ $ git clone https://github.com/foundersandcoders/morning-challenge-traffic-light
 $ npm i && npm run live
 ```
 
-## What is first-class function?
+## What is a first-class function?
 
-JavaScript's functions are "first-class". This means that they are treated exactly the same as any other type of data (eg, strings, numbers, arrays ect). This allows them to be assigned to variables, stored in arrays, passed to functions as arguments or returned from functions. In JavaScript this means that functions can be passed around, and are only ever invoked when followed by parens ```()```. 
+JavaScript's functions are "first-class". This means that they are treated exactly the same as any other type of data (eg, strings, numbers, arrays ect). This allows them to be assigned to variables, stored in arrays, passed to functions as arguments or returned from functions. In JavaScript this means that functions can be passed around, and are only ever invoked when followed by parens ```()```.
 
 Here are some examples of how functions can be used.
 
